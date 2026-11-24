@@ -1,0 +1,51 @@
+Hp@DESKTOP-7BCRSBT MINGW64 ~ (feature-branch)
+$ cd 106
+
+Hp@DESKTOP-7BCRSBT MINGW64 ~/106 (master)
+$ vi gittag.txt
+
+Hp@DESKTOP-7BCRSBT MINGW64 ~/106 (master)
+$ git add gittag.txt
+warning: in the working copy of 'gittag.txt', LF will be replaced by CRLF the next time Git touches it
+
+Hp@DESKTOP-7BCRSBT MINGW64 ~/106 (master)
+$ git commit -m'gittag committed'
+[master bc062bd] gittag committed
+ 1 file changed, 1 insertion(+)
+ create mode 100644 gittag.txt
+
+Hp@DESKTOP-7BCRSBT MINGW64 ~/106 (master)
+$ git log --oneline
+bc062bd (HEAD -> master) gittag committed
+cb0f798 comitting message 3
+56d2aea commiting the message 2
+8958e96 committing the message
+6b528bf (feature-branch) committing from master
+02704ea committing from feature-branch
+9043b42 committing from master
+539b9fd this is my third commit
+79a5326 this is my second commmit
+162ccce this is my first commit
+
+Hp@DESKTOP-7BCRSBT MINGW64 ~/106 (master)
+$ git tag v3.0 bc062bd
+
+Hp@DESKTOP-7BCRSBT MINGW64 ~/106 (master)
+$ git log --oneline
+bc062bd (HEAD -> master, tag: v3.0) gittag committed
+cb0f798 comitting message 3
+56d2aea commiting the message 2
+8958e96 committing the message
+6b528bf (feature-branch) committing from master
+02704ea committing from feature-branch
+9043b42 committing from master
+539b9fd this is my third commit
+79a5326 this is my second commmit
+162ccce this is my first commit
+
+Hp@DESKTOP-7BCRSBT MINGW64 ~/106 (master)
+$ git tag
+v3.0
+
+Hp@DESKTOP-7BCRSBT MINGW64 ~/106 (master)
+$
